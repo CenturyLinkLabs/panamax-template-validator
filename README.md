@@ -1,6 +1,6 @@
-# PanamaxTemplateValidator
+# Panamax Template Validator
 
-TODO: Write a gem description
+Validator for panamax templates. Runs a quick sanity check against .pmx files.
 
 ## Installation
 
@@ -18,7 +18,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+##### validate a single file:
+```
+PanamaxTemplateValidator.validate('/path/to/your_template.pmx')
+```
+
+##### validate a collection of files:
+```
+PanamaxTemplateValidator.validate_file_list(['/path/to/your_template.pmx', '/path/to/another_template.pmx'])
+```
+
+##### validate all *.pmx files in the current working directory:
+
+```
+PanamaxTemplateValidator.validate_repo
+```
+
+##### we generally create a default rake task in our template repos that our CI solution will execute, for example:
+
+``` 
+# Rakefile
+require 'rake'
+require 'panamax_template_validator'
+
+task :default do
+  PanamaxTemplateValidator.validate_repo
+end
+```
 
 ## Contributing
 
