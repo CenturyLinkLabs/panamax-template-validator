@@ -11,7 +11,7 @@ Validator for panamax templates. Runs a quick sanity check against .pmx files.
 
 Add this line to your application's Gemfile:
 
-    gem 'panamax_template_validator', git: 'https://github.com/CenturyLinkLabs/panamax-template-validator.git'
+    gem 'panamax_template_validator'
 
 And then execute:
 
