@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Centurylink Labs"]
   spec.email         = ["alex.welch@centurylink.com"]
   spec.summary       = %q{Validates panamax template files}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/CenturyLinkLabs/panamax-template-validator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
