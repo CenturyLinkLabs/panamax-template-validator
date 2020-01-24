@@ -7,6 +7,10 @@
 
 Validator for panamax templates. Runs a quick sanity check against .pmx files.
 
+## NOTE
+
+This repo is no longer being maintained. Users are welcome to fork it, but we make no warranty of its functionality.
+
 ## Installation
 
 Add this line to your application's Gemfile:
